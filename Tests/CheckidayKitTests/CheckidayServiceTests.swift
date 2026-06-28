@@ -49,7 +49,7 @@ actor CheckidayServiceMock: CheckidayServiceProtocol {
         return Checkiday(
             error: "none",
             date: "01/01/1970",
-            holidays: [Holiday(name: "Mock Holiday", url: "https://mock.example")],
+            holidays: [Holiday(name: "Mock Holiday", url: URL(string: "https://mock.example")!)],
             number: 1,
             lastUpdate: 0
         )

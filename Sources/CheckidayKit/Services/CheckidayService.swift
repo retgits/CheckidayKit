@@ -5,9 +5,10 @@
 //  Created by Leon Stigter on 20/10/2025.
 //
 
-
 import Foundation
 
+/// Live implementation that fetches holidays from the checkiday.com API.
+/// Formats the date as MM/dd/yyyy and decodes the JSON response into a `Checkiday` model.
 public actor CheckidayService: CheckidayServiceProtocol {
     public init() {}
 
